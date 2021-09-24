@@ -2,7 +2,6 @@
 
 #### By Matt Wilkinson
 
-
 ## Github links
 * https://github.com/wilkinsonmatt/Runescape_Hit_Chance.git
 
