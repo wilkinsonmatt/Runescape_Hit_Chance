@@ -1,0 +1,9 @@
+.results {
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.submitButton {
+  padding: 20px;
+  display: block;
+}

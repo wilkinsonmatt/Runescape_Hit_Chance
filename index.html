@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head> 
+  <title>What programming language should you choose?</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+  <!-- <div class="d-flex justify-content-center">
+    <div class="shadow-sm p-3 mb-5 bg-body rounded">
+      <h3>Which programming language should you choose?</h3> 
+    </div>
+  </div> -->
+  
+  <!-- <div class="text-center">
+    <div class="align-self-center">
+      <img src="pictures\215px-Go_Logo_Blue.svg.png" class="rounded float-start" alt="Go logo">
+      <img src="pictures\64px-Ruby_logo.svg.png" class="rounded float-end" alt="ruby logo">
+      <img src="pictures\Rust_programming_language_black_logo.svg.png" class="rounded float-start" alt="rust logo">
+      <img src="pictures\Python-logo-notext.svg.png" class="rounded float-start" alt="Python logo">
+      <img src="pictures\Swift_logo.svg.png" class="rounded float-start" alt="swift">
+    </div>
+  </div> -->
+
+  <!-- <div class="content">
+      <img src="media/play.png" id="icon">
+  </div>
+
+
+  <audio id="mySong">
+    <source src="media/song.mp3" type="audio/mp3">
+  </audio>
+
+
+  <Script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+      //mySong.play();
+      if(mySong.paused){
+        mySong.play();
+        icon.src = "media/pause.png"
+      }else{
+        mySong.pause();
+        icon.src = "media/play.png";
+      }
+    }
+  </script>
+   -->
+
+  <div class="container">
+    <div class="shadow-sm p-3 mb-5 bg-body rounded">
+      
+      <h3><strong>Player's Chance To Hit Monster</strong></h3> 
+      <br>
+
+      <div class="d-flex justify-content-center">
+        <h4>Player Information</h4> 
+      </div>
+
+      <form id="questions">
+        <div class="form-group">
+          <label for="playerAtkLvl"><strong>Player Attack level</strong></label>
+          <input id="playerAtkLvl" class="form-control" type="text">
+        </div>
+
+        
+        <label for="playerWeaponStyleBonus"><strong>Weapon Style Bonus (ex. crush bonus)</strong></label>
+        <input id="playerWeaponStyleBonus" class="form-control" type="text">
+
+        <label for="playerAttackStyle"><strong>Player Attack Style</strong></label>
+        <select class="form-control" id="playerAttackStyle">
+          <option value="Accurate">Accurate</option>
+          <option value="Aggressive">Aggressive</option>
+          <option value="Defensive">Defensive</option>
+          <option value="Controlled">Controlled</option> 
+        </select>
+
+        <label for="attackPrayer"><strong>Prayer?</strong></label>
+        <select class="form-control" id="attackPrayer">
+          <option value="1">None</option>
+          <option value="1.05">Clarity of Thought</option>
+          <option value="1.1">Improved Reflexes</option>
+          <option value="1.15">Incredible Reflexes</option>
+          <option value="1.15">Chivalry</option>
+          <option value="1.20">Piety</option>
+        </select>
+
+        <label for="attackVoid"><strong>Void?</strong></label>
+        <select class="form-control" id="attackVoid">
+          <option value="No">No</option>
+          <option value="Yes">Yes</option>
+        </select>
+
+        <label for="attackPotion"><strong>Potion?</strong></label>
+        <select class="form-control" id="attackPotion">
+          <option value="0">None</option>
+          <option value="regAttackPotion">Attack</option>
+          <option value="superAttackPotion">Super attack</option>
+        </select>
+        <br>
+
+        <div class="d-flex justify-content-center">
+          <h4>Monster Information</h4> 
+        </div>
+
+        <label for="monsterDefLevel"><strong>Monster Defence level</strong></label>
+        <input id="monsterDefLevel" class="form-control" type="text">
+
+        <br>
+
+        <label for="monsterArmBonus"><strong>Monster Armour Style Bonus (Ex. Crush def)</label>
+        <input id="monsterArmBonus" class="form-control" type="text"> 
+
+        <div class="submitButton">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div> 
+      </form>
+
+      <br>
+      <div class="d-flex justify-content-center">
+        <div class="results">
+          <div id="output"></div>
+        </div>
+      </div>
+      <br>
+
+    </div> 
+  </div>
+</body>
+</html>
