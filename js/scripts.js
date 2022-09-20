@@ -1,32 +1,3 @@
-
-// function calculatePlayerMeleeEffectiveDefence(playerDefenceLevel, playerDefenceLevelBoost, prayer, playerAttackStyle) {
-//   let effectiveDefence = ((playerDefenceLevel + playerDefenceLevelBoost) * prayer);
-  
-//   if (playerAttackStyle === "defensive") {
-//     effectiveDefence += 3;
-//   } else if (playerAttackStyle = "controlled") {
-//     effectiveDefence += 1;
-//   }
-
-//   effectiveDefence += 8;
-
-//   return effectiveDefence;
-// }
-
-
-// function calculatePlayerMeleeDefenceRoll(PlayerEffectiveDefence, PlayerDefenceLevel) {
-//   return (PlayerEffectiveDefence * (PlayerDefenceLevel + 64));
-// }
-
-
-
-
-
-
-
-
-
-
 function calculateMonsterMeleeDefRoll(monsterEffectiveDefence, monsterDefenceLevel) {
   return ((monsterDefenceLevel + 9) * (monsterEffectiveDefence + 64 ));
 }
@@ -35,14 +6,12 @@ function calculateMonsterEffectiveDefence(monsterDefenceLevel, monsterDefenceLev
   return (monsterDefenceLevel + monsterDefenceLevelBoost + 8);
 }
 
-
 //missing gear bonus (ex: slayer helm, salve amulet)
 function calculatePlayerMeleeAttackRoll(PlayerEffectiveAttackLevel, PlayerEquipmentAttackBonus) {
   let attackRoll = (PlayerEffectiveAttackLevel * (PlayerEquipmentAttackBonus + 64));
   attackRoll = Math.floor(attackRoll);
   return attackRoll
 }
-
 
 function calculatePlayerMeleeEffectiveAttack(playerAttackLevel, playerAttackLevelBoost, prayer, attackStyle, attackVoid) {
   let effectiveAttack = ((playerAttackLevel + playerAttackLevelBoost) * prayer);
@@ -85,9 +54,7 @@ function calculatePotionBoost(playerAttackLevel, attackPotion) {
   return potionBoost;
 }
 
-
-
-
+//Main function
 $(document).ready(function() {
   $("form#questions").submit(function(event) {
     event.preventDefault();
@@ -97,10 +64,8 @@ $(document).ready(function() {
     const attackPrayer = $("#attackPrayer").val();
     const attackVoid = $("#attackVoid").val();
     const attackPotion = $("#attackPotion").val(); 
-    console.log(attackPotion);
-    console.log(playerAttackLevel);
-    const playerAttackLevelBoost = calculatePotionBoost(playerAttackLevel, attackPotion);
 
+    const playerAttackLevelBoost = calculatePotionBoost(playerAttackLevel, attackPotion);
     const monsterDefenceLevel = parseInt($("#monsterDefLevel").val());
     const monsterArmourBonus = parseInt($("#monsterArmBonus").val());
 
