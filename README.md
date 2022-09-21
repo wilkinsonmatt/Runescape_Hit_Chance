@@ -1,12 +1,10 @@
-# Programming Language Suggester
+# Runescape Hit Chance Calculator 
 
 #### By Matt Wilkinson
 
-#### Programming Language Suggester
 
 ## Github links
-* https://wilkinsonmatt.github.io/Programming_Language_Suggester/
-* https://github.com/wilkinsonmatt/Programming_Language_Suggester.git
+* https://github.com/wilkinsonmatt/Runescape_Hit_Chance.git
 
 ## Technologies Used
 
@@ -17,10 +15,9 @@
 * Jquery
 
 ## Description
+A simple program that will calculate a player's melee hit chance against a monster in the OSRS (oldschool runescape). 
 
- A Programming Language Suggester webpage that asks future students a series of questions about themselves and provides a language suggestion based on their answers. 
- 
- (Unfortunately the results aren't based in science)
+I wrote it for me and I friends we were going to fight a boss, and wanted to know if we were going to be succesfull, or needed to level upmore. 
 
 ## Setup/Installation Requirements
 
