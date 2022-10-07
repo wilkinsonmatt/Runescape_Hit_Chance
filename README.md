@@ -14,9 +14,7 @@
 * Jquery
 
 ## Description
-A simple program that will calculate a player's melee hit chance against a monster in the OSRS (oldschool runescape). 
-
-I wrote it for me and I friends we were going to fight a boss, and wanted to know if we were going to be succesfull, or needed to level upmore. 
+A simple program that will calculate a player's melee hit chance against a monster in the OSRS (old school Runescape). I wrote this for my friends and I. We were going to be fighting a few bosses and wanted to know if we were going to be successful, or needed to level up more.
 
 ## Setup/Installation Requirements
 
