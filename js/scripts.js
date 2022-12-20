@@ -18,9 +18,9 @@ function calculatePlayerMeleeEffectiveAttack(playerAttackLevel, playerAttackLeve
 
   effectiveAttack = Math.floor(effectiveAttack);
 
-  if (attackStyle === "accurate") {
+  if (attackStyle === "Accurate") {
     effectiveAttack += 3;
-  } else if (attackStyle = "controlled") {
+  } else if (attackStyle === "Controlled") {
     effectiveAttack += 1;
   }
 
